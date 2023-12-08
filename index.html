@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=300, initial-scale=1" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>DriveToWeb - Host websites on Google Drive and Microsoft OneDrive</title>
+<meta name="copyright" content="Copyright (c) 2022. All Rights Reserved." />
+<meta name="description" content="Host websites on Google Drive and Microsoft OneDrive" />
+<meta name="keywords" content="web site, free hosting, google drive, hosting, onedrive, serverless" />
+<base href="https://www.drv.tw">
+<link rel="stylesheet" type="text/css" href="/inc/wd.css">
+<link rel="stylesheet" type="text/css" href="/inc/wd-s.css" media="screen and (max-width: 580px)">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">MENA SHEHATA</h1>
+        <p class="headline">استضافه الموقع</p>
+        <div class="loginBox">
+            <i class="material-icons headIcon">&#xE2C0;</i>
+            
+            <p><span id="nreq">Millions</span> requests served</p>
+            <div class="field"><input
+            
+            
+      type="button" id="gd" value="Google Drive اختر ملف موقعك عبر"
+               onclick="doSignin('gd')"></input></div>
+            <div class="field"><input type="button" id="od" value="OneDrive اختر ملف موقعك عبر" onclick="doSignin('od')"></input></div>
+            <p class="fineprint">By signing in, you agree with the <a href="/tos.html" target="_blank">Terms</a>.</p>
+        </div>
+        <p class="what"> MENASHEHATA
+            <a href="#how" onclick="showHow()">كيف استضافة الموقع?</a></p>
+            
+        <div class="كيف استضافة الموقع"><a id="" " name="   "></a>
+        <p>
+            
+            
+حمل الملف الي جوجل دريف
+              اختر ادارة اذونات الوصول. اختر الوصول العام اختر اي شخص لدية الرابط انتقل الي الموقع سوف تري رابط موقعك جاهز تلقائيا
+              
+              
+              
+              
+            </p>
+        <ol>
+            <support.</p>
+        </div>
+    </div>
+    <div id="footnotes">
+        <div class="left">
+            <a href="/tos.html" target="_blank">Terms</a>
+            <a href="/privacy.html" target="_blank">Privacy</a>
+            <a href="https://twitter.com/drv_tw" target="_blank">Twitter</a>
+            <a href="mailto:drvtw@outlook.com">Email</a>
+            <a href="https://docs-of.drv.tw" target="_blank">Docs</a>
+            <a href="/supportus.html" title="Your support is greatly appreciated!" 
+                class="highlight">Support us</a>
+        </div>
+        <div class="right">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+<script>
+function showHow() {
+    var how = document.querySelector( '.how' ) ;
+    if( how )
+        how.style.height = ( 'auto' == how.style.height ? '0px' : 'auto' ) ;
+}
+function doSignin( drive ) {
+    if( 'gd' == drive )
+        window.location = 'https://api.drv.tw/~/' + drive + '/?a=admin' ;
+    else
+        window.location = 'https://api.drv.tw/~/' + drive + '/?a=admin' ;
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'en', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE, 
+            gaTrack: true, 
+            gaId: 'UA-85417367-1'
+        }, 'google_translate_element');
+}
+</script>
+<script>
+var ft=function(){var nreq = Math.floor( ( new Date().getTime() / 1000 - 1505769480 ) * 27.778 ) ;
+document.getElementById('nreq').innerHTML=nreq.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',' ) ;};
+document.addEventListener("DOMContentLoaded", function(e){ft();setInterval(ft,1000);});
+</script>
+<script async src="https://www.drv.tw/inc/wd.js"></script>
+<script type="text/javascript" async src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
